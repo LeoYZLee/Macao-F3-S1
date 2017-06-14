@@ -12,7 +12,7 @@ namespace Leo.HoloToolkitExtensions
 {
     public class HeadManager : MonoBehaviour
     {
-        private bool isServerMode = AppStateManager.Instance.isServerMode;
+        private bool isServerMode;
 
         //[SerializeField]
         private TestButton button = null;
@@ -47,6 +47,7 @@ namespace Leo.HoloToolkitExtensions
 
         private void Start()
         {
+            isServerMode = AppStateManager.Instance.isServerMode;
             int keywordCount = ButtonActionsResponse.Length;
             if (keywordCount > 0)
             {

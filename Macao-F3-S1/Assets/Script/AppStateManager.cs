@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class AppStateManager : BaseAppStateManager, IManipulationHandler
 {
-    public bool isServerMode = false;
+    public bool isServerMode;
     void Start()
     {
+        isServerMode = false;
+#if UNITY_EDITOR
+        isServerMode = true;
+#endif
+
         InputManager.Instance.AddGlobalListener(gameObject);
     }
 

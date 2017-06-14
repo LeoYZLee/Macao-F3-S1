@@ -762,12 +762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a7018ead28e9d4d9b3ceda08adc3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isScreenMode: 0
-  button: {fileID: 0}
-  ButtonAction: 0
   ButtonActionsResponse:
-  - KeyCode: 104
-    Response:
+  - Response:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1498425872}
