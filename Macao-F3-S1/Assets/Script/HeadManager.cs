@@ -136,8 +136,13 @@ namespace Leo.HoloToolkitExtensions
                 }
                 else
                 {
-                    Camera.main.transform.position = HeadObject.transform.position;
-                    Camera.main.transform.rotation = HeadObject.transform.rotation ;
+                   Camera.main.transform.position = HeadObject.transform.position;
+                   Camera.main.transform.rotation = HeadObject.transform.rotation ;
+
+                   // if (Camera.main.transform.parent != HeadObject.transform)
+                   // {
+                   //     Camera.main.transform.parent = HeadObject.transform;
+                   // }
                 }
 
             }

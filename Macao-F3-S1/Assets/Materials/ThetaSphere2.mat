@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: generic_main
-  m_Shader: {fileID: 4800000, guid: 30a212a88e1063a428c85e50b1e427f2, type: 3}
+  m_Name: ThetaSphere2
+  m_Shader: {fileID: 4800000, guid: 301431a08d4678b4f9341fd6b17ea3e4, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -17,6 +17,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaBlendTex:
+        m_Texture: {fileID: 2800000, guid: 04ad62f09ef7ba842bb44e6d0b64685f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,7 +42,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 33a65228897bba240a42b1007a61f1d3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 55ff9bb385fa2bb49aad5101b22c00e7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -58,15 +62,17 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 1
     - _Glossiness: 0.5
-    - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OffsetU: -0.01
+    - _OffsetV: -0.06
     - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
+    - _ScaleCenterU: 0.25
+    - _ScaleCenterV: 0.55
+    - _ScaleU: 1.024
+    - _ScaleV: 1.2
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

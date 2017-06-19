@@ -5,6 +5,12 @@ using UnityEngine;
 public class AppStateManager : BaseAppStateManager, IManipulationHandler
 {
     public bool isServerMode;
+    //Hololens Disable Object
+    [SerializeField]
+    private GameObject Disable_Hololens_Car_Base_Road_layer;
+    [SerializeField]
+    private GameObject Disable_Hololens_360_layer;
+
     void Start()
     {
         isServerMode = false;
@@ -13,6 +19,14 @@ public class AppStateManager : BaseAppStateManager, IManipulationHandler
 #endif
 
         InputManager.Instance.AddGlobalListener(gameObject);
+
+        if (!isServerMode)
+        {
+            if (Disable_Hololens_360_layer != null) { Disable_Hololens_360_layer.SetActive(false); }
+            if (Disable_Hololens_Car_Base_Road_layer != null) { Disable_Hololens_Car_Base_Road_layer.SetActive(false); }
+        }
+        
+        
     }
 
     public static new AppStateManager Instance
